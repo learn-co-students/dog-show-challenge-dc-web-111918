@@ -69,10 +69,10 @@ function onSubmit(e){
   dogName =e.currentTarget.querySelector('input[name = name]').value
   dogBreed =e.currentTarget.querySelector('input[name = breed]').value
   dogSex =e.currentTarget.querySelector('input[name = sex]').value
-  editDog(dogId,dogName,dogBreed,dogSex)
   document.querySelector(`#name-${dogId}`).innerText = dogName
   document.querySelector(`#breed-${dogId}`).innerText = dogBreed
   document.querySelector(`#sex-${dogId}`).innerText = dogSex
+  editDog(dogId,dogName,dogBreed,dogSex)
 }
 
 function editDog(dogId,dogName,dogBreed,dogSex){
