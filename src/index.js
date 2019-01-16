@@ -55,6 +55,7 @@ const populateDogList = () => {
 const renderDog = (dogData) => {
   let tableBody = getTableBody();
 
+
   const tr = document.createElement("tr");
   tableBody.appendChild(tr)
   tr.id = `dog-data-${dogData.id}`
